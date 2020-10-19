@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"    android:background="#FFFFFF"
+    android:layout_marginTop="60sp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Tableau N° :"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:autoText="false"  android:id="@+id/numero"
+            android:cursorVisible="false"
+            android:textColor="#080002"
+            android:layout_weight="0.10" />
+        <RelativeLayout android:layout_marginTop="9sp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal" android:layout_margin="2sp"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+
+            <Button
+                android:enabled="true"
+                android:text="" android:drawableLeft="@drawable/circled_chevron_left48"        android:id="@+id/pre"
+                android:layout_width="45sp"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                style="@android:style/DeviceDefault.ButtonBar" />
+
+            <Button
+                android:drawableLeft="@drawable/circled_chevron_right48"
+                android:text=""  android:id="@+id/suiv"
+                android:layout_width="45sp"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"  android:layout_alignParentRight="true"
+                style="@android:style/DeviceDefault.ButtonBar"
+                 />
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:orientation="vertical"
+            android:layout_marginTop="9sp">
+            <HorizontalScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:id="@+id/tablelayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="horizontal">
+                </TableLayout>
+
+            </HorizontalScrollView>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="fill_parent" android:layout_margin="2sp"
+            android:layout_height="wrap_content">
+            <Button  android:drawableLeft="@drawable/double_left48"
+                android:text="Tableau \ninitial "  android:id="@+id/but"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                style="@android:style/DeviceDefault.ButtonBar"
+                android:background="@layout/shape2" />
+            <Button
+                android:drawableRight="@drawable/double_right48"
+                android:text="Tableau \nOptimal "  android:id="@+id/fin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"  android:layout_alignParentRight="true"
+                style="@android:style/DeviceDefault.ButtonBar"
+                android:background="@layout/shape2" />
+        </RelativeLayout>
+        <LinearLayout
+            android:background="@layout/shapepiv"
+android:id="@+id/linearLayouts"   android:layout_margin="35sp" android:columnCount="2"
+            android:layout_width="match_parent"  android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_margin="5sp"
+                android:textColor="#000000" android:id="@+id/pi"
+                android:layout_width="wrap_content"  android:minHeight="30sp"
+                android:layout_height="wrap_content" android:text="Solution Optimal :"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

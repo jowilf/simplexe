@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:padding="@dimen/appbar_padding_top" android:layout_height="match_parent" >
+<TextView
+    android:textSize="17sp"
+    android:layout_width="fill_parent" android:layout_marginTop="20sp" android:textAlignment="center"
+    android:layout_height="wrap_content" android:text="Entrer le mot de passe :"/>
+    <EditText
+        android:layout_margin="10sp" android:layout_marginBottom="1sp"
+    android:layout_width="fill_parent" android:textSize="17sp" android:id="@+id/mdp"
+    android:layout_height="wrap_content" android:inputType="textPassword" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+
+    <Button
+
+ android:layout_margin="10sp"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:text="Ok" android:gravity="center"
+   android:onClick="btn_c"
+   android:textSize="10sp"
+   android:id="@+id/val"
+   style="@android:style/DeviceDefault.ButtonBar"
+   android:background="@layout/shape2"
+        android:layout_gravity="center_horizontal" />
+    <TextView
+        android:layout_width="fill_parent" android:layout_marginTop="20sp" android:textAlignment="center"
+        android:layout_height="wrap_content" android:textColor="#e70808" android:textSize="17sp" android:text="" android:id="@+id/rep"/>
+
+</LinearLayout>

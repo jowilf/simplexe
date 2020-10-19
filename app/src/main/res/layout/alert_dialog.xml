@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:weightSum="1"  xmlns:tools="http://schemas.android.com/tools"
+    android:animationCache="false" tools:context=".MainActivity"
+    android:orientation="vertical">
+
+<TextView
+    android:layout_width="176dp"
+    android:layout_height="wrap_content"
+    android:text="Entrer la valeur à insérer"
+    android:textAlignment="center"
+    android:textSize="20dp"
+    android:autoText="false"
+    android:cursorVisible="false"
+    android:textColor="#080002" />
+    <TextView
+    android:id="@+id/edit_text1"
+    android:layout_width="155dp"
+   android:text=""
+
+    android:layout_height="35dp" android:textSize="25sp"
+    android:layout_margin="15dip"
+        android:textColor="#130007"
+        android:singleLine="true"
+        android:background="@layout/shape3" />
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:animationCache="true"
+            android:animateLayoutChanges="true">
+
+
+            <Button android:id="@+id/b1" android:layout_marginTop="4dp"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:text="1"
+                android:layout_marginLeft="2dp"
+                android:textColor="@android:color/background_dark"
+                android:theme="@android:style/DeviceDefault.Light.ButtonBar.AlertDialog"
+                style="@android:style/Widget.DeviceDefault.Light.DropDownItem"
+                android:background="@layout/shape" />
+            <Button android:id="@+id/b2" android:layout_marginTop="4dp"
+                android:layout_marginLeft="2dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="2"
+                android:textColor="@android:color/background_dark"
+                android:theme="@android:style/DeviceDefault.Light.ButtonBar.AlertDialog"
+                style="@android:style/Widget.DeviceDefault.Light.DropDownItem"
+                android:background="@layout/shape"
+                android:layout_column="1" />
+            <Button android:id="@+id/b3" android:layout_marginTop="4dp" android:layout_marginLeft="2dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="3"
+                android:textColor="@android:color/background_dark"
+                android:theme="@android:style/DeviceDefault.Light.ButtonBar.AlertDialog"
+                style="@android:style/Widget.DeviceDefault.Light.DropDownItem"
+                android:background="@layout/shape"
+                android:layout_column="2" />
+
+            <Button android:id="@+id/bD" android:layout_marginTop="4dp"
+
+                android:layout_marginLeft="2dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text=""
+                android:drawableLeft="@drawable/clear_symbol24"
+                android:textColor="@android:color/background_dark"
+                android:theme="@android:style/DeviceDefault.Light.ButtonBar.AlertDialog"
+                style="@android:style/Widget.DeviceDefault.Light.DropDownItem"
+                android:background="@layout/shape"
+                android:layout_column="3" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:animationCache="true"
+            android:animateLayoutChanges="true">
+            <Button android:id="@+id/b4" android:layout_marginTop="4dp" android:layout_marginLeft="2dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="4"
+                android:textColor="@android:color/background_dark"
+                android:theme="@android:style/DeviceDefault.Light.ButtonBar.AlertDialog"
+                style="@android:style/Widget.DeviceDefault.Light.DropDownItem"
+                android:background="@layout/shape"
+                android:layout_column="0" />
+            <Button android:id="@+id/b5" android:layout_marginTop="4dp" android:layout_marginLeft="2dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="5"
+                android:textColor="@android:color/background_dark"
+                android:theme="@android:style/DeviceDefault.Light.ButtonBar.AlertDialog"
+                style="@android:style/Widget.DeviceDefault.Light.DropDownItem"
+                android:background="@layout/shape"
+                android:layout_column="0" />
+
+            <Button android:id="@+id/b6" android:layout_marginTop="4dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="6"
+                android:layout_marginLeft="2dp"
+                android:textColor="@android:color/background_dark"
+                android:theme="@android:style/DeviceDefault.Light.ButtonBar.AlertDialog"
+                style="@android:style/Widget.DeviceDefault.Light.DropDownItem"
+                android:background="@layout/shape" />
+
+            <Button android:id="@+id/bm" android:layout_marginTop="4dp" android:layout_marginLeft="2dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:drawableLeft="@drawable/plus_minus4" android:gravity="center"
+                android:textColor="@android:color/background_dark"
+                android:theme="@android:style/DeviceDefault.Light.ButtonBar.AlertDialog"
+                style="@android:style/Widget.DeviceDefault.Light.DropDownItem"
+                android:background="@layout/shape"
+                android:layout_column="3" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:animationCache="true"
+            android:animateLayoutChanges="true">
+            <Button android:id="@+id/b7" android:layout_marginTop="4dp"
+
+                android:layout_marginLeft="2dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="7"
+                android:textColor="@android:color/background_dark"
+                android:theme="@android:style/DeviceDefault.Light.ButtonBar.AlertDialog"
+                style="@android:style/Widget.DeviceDefault.Light.DropDownItem"
+                android:background="@layout/shape"
+                android:layout_column="0" />
+            <Button android:id="@+id/b8" android:layout_marginTop="4dp" android:layout_marginLeft="2dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="8"
+                android:textColor="@android:color/background_dark"
+                android:theme="@android:style/DeviceDefault.Light.ButtonBar.AlertDialog"
+                style="@android:style/Widget.DeviceDefault.Light.DropDownItem"
+                android:background="@layout/shape"
+                android:layout_column="1" />
+            <Button android:id="@+id/b9" android:layout_marginTop="4dp" android:layout_marginLeft="2dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="9"
+                android:textColor="@android:color/background_dark"
+                android:theme="@android:style/DeviceDefault.Light.ButtonBar.AlertDialog"
+                style="@android:style/Widget.DeviceDefault.Light.DropDownItem"
+                android:background="@layout/shape"
+                android:layout_column="2" />
+
+
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:animationCache="true"
+            android:animateLayoutChanges="true">
+
+            <Button android:id="@+id/bP" android:layout_marginTop="4dp" android:layout_marginLeft="2dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="."
+                android:textColor="@android:color/background_dark"
+                android:theme="@android:style/DeviceDefault.Light.ButtonBar.AlertDialog"
+                style="@android:style/Widget.DeviceDefault.Light.DropDownItem"
+                android:background="@layout/shape"
+                android:layout_column="0" />
+            <Button android:id="@+id/bz" android:layout_marginTop="4dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="0"
+                android:layout_marginLeft="2dp"
+                android:textColor="@android:color/background_dark"
+                android:theme="@android:style/DeviceDefault.Light.ButtonBar.AlertDialog"
+                style="@android:style/Widget.DeviceDefault.Light.DropDownItem"
+                android:background="@layout/shape" />
+
+            <Button android:id="@+id/bS" android:layout_marginTop="4dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="/"
+                android:layout_marginLeft="2dp"
+                android:textColor="@android:color/background_dark"
+                android:theme="@android:style/DeviceDefault.Light.ButtonBar.AlertDialog"
+                style="@android:style/Widget.DeviceDefault.Light.DropDownItem"
+                android:background="@layout/shape"
+                android:layout_column="2" />
+
+        </TableRow></TableLayout>
+
+</LinearLayout>

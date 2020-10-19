@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="max_min">
+        <item><b>Maximiser</b></item>
+        <item><b>Minimiser</b></item>
+    </string-array>
+    <string-array name="signe">
+        <item><b>≤</b></item>
+        <item><b>=</b></item>
+        <item><b>≥</b></item>
+    </string-array>
+</resources>
